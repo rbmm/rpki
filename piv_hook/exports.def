@@ -1,0 +1,8 @@
+LIBRARY	"piv_hook"
+
+EXPORTS
+
+CardAcquireContext = CardAcquireContextInternal
+CardAcquireContextInternal
+DllRegisterServer PRIVATE
+DllUnregisterServer PRIVATE

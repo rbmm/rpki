@@ -1,0 +1,210 @@
+The Microsoft Smart Card Resource Manager is running.
+Current reader/card status:
+Readers: 1
+  0: RBMM Smartcard Reader (PV1) 0
+--- Reader: RBMM Smartcard Reader (PV1) 0
+--- Status: SCARD_STATE_PRESENT | SCARD_STATE_UNPOWERED
+--- Status: The card is available for use.
+---   Card: Rbmm
+---    ATR:
+	3b 06 5f 52 42 4d 4d 39                            ;._RBMM9
+
+
+=======================================================
+Analyzing card in reader: RBMM Smartcard Reader (PV1) 0
+
+--------------===========================--------------
+================ Certificate 0 ================
+--- Reader: RBMM Smartcard Reader (PV1) 0
+---   Card: Rbmm
+Provider = Microsoft Base Smart Card Crypto Provider
+Key Container = {f686ca75-72a5-f40f-a57a-e6c76e9998f4} [Default Container]
+
+No AT_SIGNATURE key for reader: RBMM Smartcard Reader (PV1) 0
+Serial Number: 0834c763658fd454e1c8a5e8d7dbc389
+Issuer: CN=RBMM-ECC-384
+ NotBefore: 2026-05-22 03:07
+ NotAfter: 2036-05-19 03:07
+Subject: CN=Harry
+Non-root Certificate
+Cert Hash(sha1): 8dd47101ce9d9f839030e126661fef1f4fead013
+
+Performing AT_KEYEXCHANGE public key matching test...
+Public key matching test succeeded
+  Key Container = {f686ca75-72a5-f40f-a57a-e6c76e9998f4}
+  Provider = Microsoft Base Smart Card Crypto Provider
+  ProviderType = 1
+  Flags = 1
+    0x1 (1)
+  KeySpec = 1 -- AT_KEYEXCHANGE
+Private key verifies
+
+Performing cert chain verification...
+Chain validates
+Smart Card Logon: Chain validates
+dwFlags = CA_VERIFY_FLAGS_NT_AUTH (0x10)
+dwFlags = CA_VERIFY_FLAGS_CONSOLE_TRACE (0x20000000)
+dwFlags = CA_VERIFY_FLAGS_DUMP_CHAIN (0x40000000)
+Application[0] = 1.3.6.1.4.1.311.20.2.2 Smart Card Logon
+ChainFlags = CERT_CHAIN_REVOCATION_CHECK_CHAIN_EXCLUDE_ROOT (0x40000000)
+HCCE_LOCAL_MACHINE
+CERT_CHAIN_POLICY_NT_AUTH
+-------- CERT_CHAIN_CONTEXT --------
+ChainContext.dwInfoStatus = CERT_TRUST_HAS_PREFERRED_ISSUER (0x100)
+ChainContext.dwRevocationFreshnessTime: 10 Minutes
+
+SimpleChain.dwInfoStatus = CERT_TRUST_HAS_PREFERRED_ISSUER (0x100)
+SimpleChain.dwRevocationFreshnessTime: 10 Minutes
+
+CertContext[0][0]: dwInfoStatus=101 dwErrorStatus=0
+  Issuer: CN=RBMM-ECC-384
+  NotBefore: 2026-05-22 03:07
+  NotAfter: 2036-05-19 03:07
+  Subject: CN=Harry
+  Serial: 0834c763658fd454e1c8a5e8d7dbc389
+  SubjectAltName: Other Name:Principal Name=Harry@DESKTOP-2N5ODLB
+  Cert: 8dd47101ce9d9f839030e126661fef1f4fead013
+  Element.dwInfoStatus = CERT_TRUST_HAS_EXACT_MATCH_ISSUER (0x1)
+  Element.dwInfoStatus = CERT_TRUST_HAS_PREFERRED_ISSUER (0x100)
+    CRL (null):
+    Issuer: CN=RBMM-ECC-384
+    ThisUpdate: 2026-07-03 23:25
+    NextUpdate: 2026-07-03 23:45
+    CRL: 27aa30646753bf6f1211b874ff49de4d17dfac0b
+  Issuance[0] = 2.16.840.1.101.3.2.1.3.13 
+  Application[0] = 1.3.6.1.4.1.311.20.2.2 Smart Card Logon
+  Application[1] = 1.3.6.1.5.5.7.3.2 Client Authentication
+
+CertContext[0][1]: dwInfoStatus=10c dwErrorStatus=0
+  Issuer: CN=RBMM-ECC-384
+  NotBefore: 2026-05-19 19:24
+  NotAfter: 2036-05-16 19:24
+  Subject: CN=RBMM-ECC-384
+  Serial: 0903a80e2f9e1118dfff7dcf0a7e9232
+  Cert: 13aba3040b162e564b6f8e4337e82547b0a03fed
+  Element.dwInfoStatus = CERT_TRUST_HAS_NAME_MATCH_ISSUER (0x4)
+  Element.dwInfoStatus = CERT_TRUST_IS_SELF_SIGNED (0x8)
+  Element.dwInfoStatus = CERT_TRUST_HAS_PREFERRED_ISSUER (0x100)
+  Application[0] = 1.3.6.1.4.1.311.20.2.2 Smart Card Logon
+  Application[1] = 1.3.6.1.5.5.7.3.1 Server Authentication
+  Application[2] = 1.3.6.1.5.5.7.3.2 Client Authentication
+  Application[3] = 1.3.6.1.5.5.7.3.3 Code Signing
+  Application[4] = 1.3.6.1.5.5.7.3.4 Secure Email
+  Application[5] = 1.3.6.1.4.1.311.10.3.4 Encrypting File System
+  Application[6] = 1.3.6.1.4.1.311.67.1.1 BitLocker Drive Encryption
+
+Exclude leaf cert:
+  Chain: c8ec64f214833ad3be598fea9476b18851e1a6c1
+Full chain:
+  Chain: 00ce2e660c3142c0cd95fdde9c7b031d25d32150
+  Issuer: CN=RBMM-ECC-384
+  NotBefore: 2026-05-22 03:07
+  NotAfter: 2036-05-19 03:07
+  Subject: CN=Harry
+  Serial: 0834c763658fd454e1c8a5e8d7dbc389
+  SubjectAltName: Other Name:Principal Name=Harry@DESKTOP-2N5ODLB
+  Cert: 8dd47101ce9d9f839030e126661fef1f4fead013
+A certification chain processed correctly, but one of the CA certificates is not trusted by the policy provider. 0x800b0112 (-2146762478 CERT_E_UNTRUSTEDCA)
+------------------------------------
+Displayed AT_KEYEXCHANGE cert for reader: RBMM Smartcard Reader (PV1) 0
+
+--------------===========================--------------
+================ Certificate 0 ================
+--- Reader: RBMM Smartcard Reader (PV1) 0
+---   Card: Rbmm
+Provider = Microsoft Smart Card Key Storage Provider
+Key Container = {f686ca75-72a5-f40f-a57a-e6c76e9998f4}
+
+Serial Number: 0834c763658fd454e1c8a5e8d7dbc389
+Issuer: CN=RBMM-ECC-384
+ NotBefore: 2026-05-22 03:07
+ NotAfter: 2036-05-19 03:07
+Subject: CN=Harry
+Non-root Certificate
+Cert Hash(sha1): 8dd47101ce9d9f839030e126661fef1f4fead013
+
+Performing  public key matching test...
+Public key matching test succeeded
+  Key Container = {f686ca75-72a5-f40f-a57a-e6c76e9998f4}
+  Provider = Microsoft Smart Card Key Storage Provider
+  ProviderType = 0
+  Flags = 1
+    0x1 (1)
+  KeySpec = 0 -- XCN_AT_NONE
+Private key verifies
+Microsoft Smart Card Key Storage Provider: KeySpec=0
+AES256+RSAES_OAEP(RSA:CNG) test passed
+
+Performing cert chain verification...
+Chain validates
+Smart Card Logon: Chain validates
+dwFlags = CA_VERIFY_FLAGS_NT_AUTH (0x10)
+dwFlags = CA_VERIFY_FLAGS_CONSOLE_TRACE (0x20000000)
+dwFlags = CA_VERIFY_FLAGS_DUMP_CHAIN (0x40000000)
+Application[0] = 1.3.6.1.4.1.311.20.2.2 Smart Card Logon
+ChainFlags = CERT_CHAIN_REVOCATION_CHECK_CHAIN_EXCLUDE_ROOT (0x40000000)
+HCCE_LOCAL_MACHINE
+CERT_CHAIN_POLICY_NT_AUTH
+-------- CERT_CHAIN_CONTEXT --------
+ChainContext.dwInfoStatus = CERT_TRUST_HAS_PREFERRED_ISSUER (0x100)
+ChainContext.dwRevocationFreshnessTime: 10 Minutes, 9 Seconds
+
+SimpleChain.dwInfoStatus = CERT_TRUST_HAS_PREFERRED_ISSUER (0x100)
+SimpleChain.dwRevocationFreshnessTime: 10 Minutes, 9 Seconds
+
+CertContext[0][0]: dwInfoStatus=101 dwErrorStatus=0
+  Issuer: CN=RBMM-ECC-384
+  NotBefore: 2026-05-22 03:07
+  NotAfter: 2036-05-19 03:07
+  Subject: CN=Harry
+  Serial: 0834c763658fd454e1c8a5e8d7dbc389
+  SubjectAltName: Other Name:Principal Name=Harry@DESKTOP-2N5ODLB
+  Cert: 8dd47101ce9d9f839030e126661fef1f4fead013
+  Element.dwInfoStatus = CERT_TRUST_HAS_EXACT_MATCH_ISSUER (0x1)
+  Element.dwInfoStatus = CERT_TRUST_HAS_PREFERRED_ISSUER (0x100)
+    CRL (null):
+    Issuer: CN=RBMM-ECC-384
+    ThisUpdate: 2026-07-03 23:25
+    NextUpdate: 2026-07-03 23:45
+    CRL: 27aa30646753bf6f1211b874ff49de4d17dfac0b
+  Issuance[0] = 2.16.840.1.101.3.2.1.3.13 
+  Application[0] = 1.3.6.1.4.1.311.20.2.2 Smart Card Logon
+  Application[1] = 1.3.6.1.5.5.7.3.2 Client Authentication
+
+CertContext[0][1]: dwInfoStatus=10c dwErrorStatus=0
+  Issuer: CN=RBMM-ECC-384
+  NotBefore: 2026-05-19 19:24
+  NotAfter: 2036-05-16 19:24
+  Subject: CN=RBMM-ECC-384
+  Serial: 0903a80e2f9e1118dfff7dcf0a7e9232
+  Cert: 13aba3040b162e564b6f8e4337e82547b0a03fed
+  Element.dwInfoStatus = CERT_TRUST_HAS_NAME_MATCH_ISSUER (0x4)
+  Element.dwInfoStatus = CERT_TRUST_IS_SELF_SIGNED (0x8)
+  Element.dwInfoStatus = CERT_TRUST_HAS_PREFERRED_ISSUER (0x100)
+  Application[0] = 1.3.6.1.4.1.311.20.2.2 Smart Card Logon
+  Application[1] = 1.3.6.1.5.5.7.3.1 Server Authentication
+  Application[2] = 1.3.6.1.5.5.7.3.2 Client Authentication
+  Application[3] = 1.3.6.1.5.5.7.3.3 Code Signing
+  Application[4] = 1.3.6.1.5.5.7.3.4 Secure Email
+  Application[5] = 1.3.6.1.4.1.311.10.3.4 Encrypting File System
+  Application[6] = 1.3.6.1.4.1.311.67.1.1 BitLocker Drive Encryption
+
+Exclude leaf cert:
+  Chain: c8ec64f214833ad3be598fea9476b18851e1a6c1
+Full chain:
+  Chain: 00ce2e660c3142c0cd95fdde9c7b031d25d32150
+  Issuer: CN=RBMM-ECC-384
+  NotBefore: 2026-05-22 03:07
+  NotAfter: 2036-05-19 03:07
+  Subject: CN=Harry
+  Serial: 0834c763658fd454e1c8a5e8d7dbc389
+  SubjectAltName: Other Name:Principal Name=Harry@DESKTOP-2N5ODLB
+  Cert: 8dd47101ce9d9f839030e126661fef1f4fead013
+A certification chain processed correctly, but one of the CA certificates is not trusted by the policy provider. 0x800b0112 (-2146762478 CERT_E_UNTRUSTEDCA)
+------------------------------------
+Displayed  cert for reader: RBMM Smartcard Reader (PV1) 0
+
+--------------===========================--------------
+
+Done.
+CertUtil: -SCInfo command completed successfully.

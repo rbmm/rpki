@@ -1,0 +1,43 @@
+{
+  "Subject": "James Doe",
+  "Alg": "ECDSA_P256",
+  "Pfx": "o:/vc/x64/pfx/James Doe.pfx*0",
+  "Cert": "o:/vc/x64/release/c/James Doe.cer",
+  "Days": 3650,
+  "Issuer": "o:/c/x64/pfx/RBMM-ECC-384.pfx*0",
+  "CA": {
+	"1.3.6.1.5.5.7.48.1": "http://DESKTOP-2N5ODLB:28018/ocsp",  
+	"1.3.6.1.5.5.7.48.2": "http://DESKTOP-2N5ODLB/file/C/RBMM-ECC-384.cer"
+  },
+  "Template": ["1.3.6.1.4.1.311.21.8.3032776714.2974785564.2375659916.1", 2],
+  "Policy": "2.16.840.1.101.3.2.1.3.13",
+  "Usage" : [
+      "CERT_DIGITAL_SIGNATURE_KEY_USAGE",
+      "CERT_NON_REPUDIATION_KEY_USAGE",
+      "CERT_KEY_ENCIPHERMENT_KEY_USAGE",
+      "CERT_DATA_ENCIPHERMENT_KEY_USAGE",
+      "CERT_KEY_AGREEMENT_KEY_USAGE",
+      "CERT_KEY_CERT_SIGN_KEY_USAGE",
+      "CERT_CRL_SIGN_KEY_USAGE",
+      "CERT_ENCIPHER_ONLY_KEY_USAGE"
+  ],
+  "EnUsage": [ 
+    "1.3.6.1.5.5.7.3.1",
+    "1.3.6.1.5.5.7.3.2", 
+    "1.3.6.1.5.5.7.3.3", 
+    "1.3.6.1.5.5.7.3.4", 
+    "1.3.6.1.4.1.311.67.1.1",
+    "1.3.6.1.4.1.311.20.2.2",
+    "1.3.6.1.4.1.311.10.3.4"
+  ],
+  "BC": [ true, true, 2],
+  "Name": {
+    "RFC822_NAME": "harry@email.com",
+    "DNS_NAME": "DESKTOP-2N5ODLB",
+    "URL": "urn:uuid:F187BA7F-0F28-4939-905A-C0E3604CD058",
+    "OTHER_NAME": {
+      "1.3.6.1.4.1.311.20.2.3" : "James@DESKTOP-2N5ODLB",
+      "2.16.840.1.101.3.6.6" : "0123456789abcdef"
+    }
+  }
+}

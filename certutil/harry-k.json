@@ -1,0 +1,24 @@
+{
+  "Issuer": ">ROOT:M*0cdd8294dfa2aac74accdca4ec367a2bed239c80",
+  "CA": {
+	"1.3.6.1.5.5.7.48.1": "http://DESKTOP-2N5ODLB:28018/ocsp",  
+	"1.3.6.1.5.5.7.48.2": "http://DESKTOP-2N5ODLB/file/C/RbmmRoot.cer"
+  },
+  "Days": 3650,
+  "Subject": "Harry K",
+  "Alg": "ECDSA_P256",
+  "Pfx": "o:/vc/x64/Pfx/harry-k.pfx*0",
+  "Cert": "o:/vc/x64/release/c/harry-k.cer",
+  "Usage" : [
+	  "CERT_KEY_AGREEMENT_KEY_USAGE"
+  ],
+  "EnUsage": [ 
+		"1.3.6.1.4.1.311.10.3.4",
+		"1.3.6.1.5.5.7.3.4",
+		"1.3.6.1.4.1.311.67.1.1"
+  ],
+  "Name": {
+    "RFC822_NAME": "harry@email.com",
+  },
+  "Policy": [ "2.16.840.1.101.3.2.1.3.16" ]
+}

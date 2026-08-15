@@ -1,0 +1,13 @@
+{
+  "Subject": "RbmmRoot384",
+  "Alg": "ECDSA_P384:RbmmRoot-ECC384:M",
+  "Cert": "o:/vc/x64/release/c/RbmmRoot.cer",
+  "Pfx": "Root*M",
+  "Days": 3650,
+  "Usage" : [
+      "CERT_DIGITAL_SIGNATURE_KEY_USAGE",
+      "CERT_KEY_CERT_SIGN_KEY_USAGE",
+      "CERT_CRL_SIGN_KEY_USAGE",
+  ],
+  "BC": [ true, false ]
+}

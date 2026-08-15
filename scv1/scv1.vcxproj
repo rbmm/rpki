@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{7708E0F1-97bd-F0DE-FEFB-D77FF5DC4FC8}</ProjectGuid>
+    <RootNamespace>scv1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <UserRootDir>$(SolutionDir)MSBuild\v4.0</UserRootDir>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableUAC>false</EnableUAC>
+      <EntryPointSymbol>ep</EntryPointSymbol>
+      <AdditionalOptions>/EMITPOGOPHASEINFO /EMITVOLATILEMETADATA:NO %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>comctl32.lib;cabinet.lib;Cfgmgr32.lib;bcrypt.lib;ncrypt.lib;Crypt32.lib;Cryptui.lib;ole32.lib;gdi32.lib;shell32.lib;asio.lib;ntver.lib;mswsock.lib;ws2_32.lib;Dnsapi.lib;log.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <DelayLoadDLLs>shell32.dll</DelayLoadDLLs>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\$(PlatformTarget);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="check.cpp" />
+    <ClCompile Include="dns.cpp" />
+    <ClCompile Include="machine-uuid.cpp" />
+    <ClCompile Include="msgbox.cpp" />
+    <ClCompile Include="Pkcs#10.cpp" />
+    <ClCompile Include="pkt.cpp" />
+    <ClCompile Include="server.cpp" />
+    <ClCompile Include="util.cpp" />
+    <ClCompile Include="wnd.cpp" />
+    <ClInclude Include="asn1.h" />
+    <ClInclude Include="card.h" />
+    <ClInclude Include="disk.h" />
+    <ClInclude Include="dns.h" />
+    <ClInclude Include="machine-uuid.h" />
+    <ClInclude Include="msgbox.h" />
+    <ClInclude Include="pem.h" />
+    <ClInclude Include="pkcs#10.h" />
+    <ClInclude Include="pkt.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClCompile Include="asn1.cpp" />
+    <ClCompile Include="card.cpp" />
+    <ClCompile Include="disk.cpp" />
+    <ClCompile Include="ep.cpp" />
+    <ClCompile Include="install.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClInclude Include="util.h" />
+    <ClInclude Include="wnd.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SCV1.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".rc2" />
+    <CustomBuild Include="code64.asm">
+      <FileType>Document</FileType>
+      <Command>ml64 /c /Cp %(Identity)</Command>
+      <Outputs>%(Filename).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(PlatformTarget)'!='x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include=".manifest" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

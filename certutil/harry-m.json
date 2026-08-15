@@ -1,0 +1,25 @@
+{
+  "Issuer": ">ROOT:M*0cdd8294dfa2aac74accdca4ec367a2bed239c80",
+  "CA": {
+	"1.3.6.1.5.5.7.48.1": "http://DESKTOP-2N5ODLB:28018/ocsp",  
+	"1.3.6.1.5.5.7.48.2": "http://DESKTOP-2N5ODLB/file/C/RbmmRoot.cer"
+  },
+  "Days": 3650,
+  "Subject": "Harry M",
+  "Alg": "RSA",
+  "Pfx": "o:/vc/x64/Pfx/harry-m.pfx*0",
+  "Cert": "o:/vc/x64/release/c/harry-m.cer",
+  "Usage" : [
+	  "CERT_DIGITAL_SIGNATURE_KEY_USAGE"
+  ],
+  "EnUsage": [ 
+		"2.16.840.1.101.3.6.8"
+  ],
+  "Name": {
+    "URL": "urn:uuid:90baba28-a787-4ca8-210d-a89f82b3f034",
+	"OTHER_NAME": {
+		"2.16.840.1.101.3.6.6": "c4 b6 1b 99 45 c6 64 a6 57 2d 14 e7 6f 04 30 96 8c f3 21 b0 f4 2a d2 59 39"
+	}
+  },
+  "Policy": [ "2.16.840.1.101.3.2.1.3.17" ]
+}

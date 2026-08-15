@@ -1,0 +1,22 @@
+{
+  "Subject": "DESKTOP-2N5ODLB",
+  "Alg": "ECDSA_P256:DESKTOP-2N5ODLB:M",
+  "Pfx": "MY*M",
+  "Cert": "o:/vc/x64/release/c/DESKTOP-2N5ODLB.cer",
+  "Days": 3650,
+  "Issuer": ">ROOT:M*0cdd8294dfa2aac74accdca4ec367a2bed239c80",
+  "CA": {
+	"1.3.6.1.5.5.7.48.1": "http://DESKTOP-2N5ODLB:28018/ocsp",  
+	"1.3.6.1.5.5.7.48.2": "http://DESKTOP-2N5ODLB/file/C/RbmmRoot.cer"
+  },
+  "Usage" : [
+      "CERT_DIGITAL_SIGNATURE_KEY_USAGE",
+  ],
+  "EnUsage": [ 
+    "1.3.6.1.5.5.7.3.1"
+  ],
+  "BC": [ false, false ],
+  "Name": {
+    "DNS_NAME": "DESKTOP-2N5ODLB",
+  }
+}

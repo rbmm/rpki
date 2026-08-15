@@ -1,0 +1,59 @@
+*Type=0*Days=3650*Subject=RBMM-ECC-384*Pfx=o:\vc\x64\pfx\RBMM-ECC-384.pfx*Cert=o:\vc\x64\release\c\RBMM-ECC-384.cer*Alg=ECDSA_P384*Password=0*
+*Type=1*Days=3650*Subject=DESKTOP-2N5ODLB*Issuer=o:\vc\x64\pfx\RBMM-ECC-384.pfx*Pfx=o:\vc\x64\pfx\DESKTOP-2N5ODLB.pfx*Cert=o:\vc\x64\release\c\DESKTOP-2N5ODLB.cer*Ca=http://DESKTOP-2N5ODLB/file/C/RBMM-ECC-384.cer*Ocsp=http://DESKTOP-2N5ODLB:28018/ocsp*Alg=ECDSA_P256*Dns=DESKTOP-2N5ODLB*Template=1.3.6.1.4.1.311.21.8.3032776714.2974785564.2375659916.1*Password=0*
+*Type=2*Pfx=o:\vc\x64\pfx\RBMM-ECC-384.pfx*Password=0*
+*Type=3*Days=3650*Subject=James Doe*Issuer=o:\vc\x64\pfx\RBMM-ECC-384.pfx*Pfx=o:\vc\x64\pfx\James Doe.pfx*Cert=o:\vc\x64\release\c\James Doe.cer*Ca=http://DESKTOP-2N5ODLB/file/C/RBMM-ECC-384.cer*Ocsp=http://DESKTOP-2N5ODLB:28018/ocsp*Alg=ECDSA_P256*UPN=James@DESKTOP-2N5ODLB*Password=0*
+*Type=4*Days=3650*Subject=Harry*Issuer=o:\vc\x64\pfx\RBMM-ECC-384.pfx*Pfx=o:\vc\x64\pfx\Harry-A.pfx*Cert=o:\vc\x64\release\c\Harry-A.cer*Ca=http://DESKTOP-2N5ODLB/file/C/RBMM-ECC-384.cer*Ocsp=http://DESKTOP-2N5ODLB:28018/ocsp*Alg=ECDSA_P256*UPN=Harry@DESKTOP-2N5ODLB*Password=0*URL=O:\vc\x64\PFX\harry-A.key*
+*Type=5*Days=3650*Subject=Harry*Issuer=o:\vc\x64\pfx\RBMM-ECC-384.pfx*Pfx=o:\vc\x64\pfx\Harry-C.pfx*Cert=o:\vc\x64\release\c\Harry-C.cer*Ca=http://DESKTOP-2N5ODLB/file/C/RBMM-ECC-384.cer*Ocsp=http://DESKTOP-2N5ODLB:28018/ocsp*Alg=ECDSA_P256*UPN=harry@email.com*Password=0*URL=O:\vc\x64\PFX\harry-C.key*
+*Type=6*Days=3650*Subject=Harry*Issuer=o:\vc\x64\pfx\RBMM-ECC-384.pfx*Pfx=o:\vc\x64\pfx\Harry-K.pfx*Cert=o:\vc\x64\release\c\Harry-K.cer*Ca=http://DESKTOP-2N5ODLB/file/C/RBMM-ECC-384.cer*Ocsp=http://DESKTOP-2N5ODLB:28018/ocsp*Alg=ECDSA_P256*UPN=harry@email.com*Password=0*URL=O:\vc\x64\PFX\harry-K.key*
+*Type=7*Days=3650*Subject=Harry*Issuer=o:\vc\x64\pfx\RBMM-ECC-384.pfx*Pfx=o:\vc\x64\pfx\Harry-M.pfx*Cert=o:\vc\x64\release\c\Harry-M.cer*Ca=http://DESKTOP-2N5ODLB/file/C/RBMM-ECC-384.cer*Ocsp=http://DESKTOP-2N5ODLB:28018/ocsp*Alg=ECDSA_P256*UPN=harry@email.com*Password=0*URL=O:\vc\x64\PFX\harry-M.key*
+
+*Type=4*Days=3650*Subject=Harry*Issuer=o:\vc\x64\pfx\RBMM-ECC-384.pfx*Pfx=o:\vc\x64\pfx\Harry-A.pfx*Cert=o:\vc\x64\release\c\Harry-A.cer*Ca=http://DESKTOP-2N5ODLB/file/C/RBMM-ECC-384.cer*Ocsp=http://DESKTOP-2N5ODLB:28018/ocsp*Alg=RSA*UPN=Harry@DESKTOP-2N5ODLB*Password=0*URL=O:\vc\x64\PFX\harry-A.key*
+*Type=5*Days=3650*Subject=Harry*Issuer=o:\vc\x64\pfx\RBMM-ECC-384.pfx*Pfx=o:\vc\x64\pfx\Harry-C.pfx*Cert=o:\vc\x64\release\c\Harry-C.cer*Ca=http://DESKTOP-2N5ODLB/file/C/RBMM-ECC-384.cer*Ocsp=http://DESKTOP-2N5ODLB:28018/ocsp*Alg=RSA*UPN=harry@email.com*Password=0*URL=O:\vc\x64\PFX\harry-C.key*
+*Type=6*Days=3650*Subject=Harry*Issuer=o:\vc\x64\pfx\RBMM-ECC-384.pfx*Pfx=o:\vc\x64\pfx\Harry-K.pfx*Cert=o:\vc\x64\release\c\Harry-K.cer*Ca=http://DESKTOP-2N5ODLB/file/C/RBMM-ECC-384.cer*Ocsp=http://DESKTOP-2N5ODLB:28018/ocsp*Alg=RSA*UPN=harry@email.com*Password=0*URL=O:\vc\x64\PFX\harry-K.key*
+*Type=7*Days=3650*Subject=Harry*Issuer=o:\vc\x64\pfx\RBMM-ECC-384.pfx*Pfx=o:\vc\x64\pfx\Harry-M.pfx*Cert=o:\vc\x64\release\c\Harry-M.cer*Ca=http://DESKTOP-2N5ODLB/file/C/RBMM-ECC-384.cer*Ocsp=http://DESKTOP-2N5ODLB:28018/ocsp*Alg=RSA*UPN=harry@email.com*Password=0*URL=O:\vc\x64\PFX\harry-M.key*
+
+{
+  "Issuer": "o:/c/x64/pfx/RBMM-ECC-384.pfx*00",
+  "Subject": "James Doe",
+  "Alg": "ECDSA_P256",
+  "Pfx": "o:/vc/x64/pfx/James Doe.pfx*0",
+  "Cert": "o:/vc/x64/release/c/James Doe.cer",
+  "Days": 3650,
+  "Ca": "http://DESKTOP-2N5ODLB/file/C/RBMM-ECC-384.cer",
+  "Ocsp": "http://DESKTOP-2N5ODLB:28018/ocsp",
+  "Template": ["1.3.6.1.4.1.311.21.8.3032776714.2974785564.2375659916.1", 2, 0]
+  "Policy": "2.16.840.1.101.3.2.1.3.13",
+  "Usage" : [
+      "CERT_DIGITAL_SIGNATURE_KEY_USAGE",
+      "CERT_NON_REPUDIATION_KEY_USAGE",
+      "CERT_KEY_ENCIPHERMENT_KEY_USAGE",
+      "CERT_DATA_ENCIPHERMENT_KEY_USAGE",
+      "CERT_KEY_AGREEMENT_KEY_USAGE",
+      "CERT_KEY_CERT_SIGN_KEY_USAGE",
+      "CERT_CRL_SIGN_KEY_USAGE",
+      "CERT_ENCIPHER_ONLY_KEY_USAGE",
+      "CERT_DECIPHER_ONLY_KEY_USAGE"
+  ],
+  "EnUsage": [ 
+    "1.3.6.1.5.5.7.3.1",
+    "1.3.6.1.5.5.7.3.2", 
+    "1.3.6.1.5.5.7.3.3", 
+    "1.3.6.1.5.5.7.3.4", 
+    "1.3.6.1.4.1.311.67.1.1",
+    "1.3.6.1.4.1.311.20.2.2",
+    "1.3.6.1.4.1.311.10.3.4"
+  ],
+  "BC": [ true, false, 2],
+  "Name": {
+    "Rfc": "harry@email.com",
+    "DNS": "DESKTOP-2N5ODLB",
+    "URL": "https://learn.microsoft.com/en-us/windows/win32/api/bcrypt/nf-bcrypt-bcryptderivekey",
+    "Other": {
+      "1.3.6.1.4.1.311.20.2.3" : "James@DESKTOP-2N5ODLB",
+      "2.16.840.1.101.3.6.6" : ["01234567890abcdef"]
+    }
+  }
+}
+
+
+
