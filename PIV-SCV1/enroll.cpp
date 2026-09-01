@@ -904,7 +904,7 @@ HRESULT GetCAInfo(_In_ PCWSTR wszCertType, _Out_ BSTR* ppwszComputerName, _Out_ 
 			*ppwszAuthority = bstrs[1];
 			*ppwszComputerName = bstrs[0];
 
-			DbgPrint("CA: \"%s\"\r\nDNS: \"%s\"\r\n", *ppwszAuthority, *ppwszComputerName);
+			DbgPrint("CA: \"%ws\"\r\nDNS: \"%ws\"\r\n", *ppwszAuthority, *ppwszComputerName);
 		}
 
 		CACloseCA(hCAInfo);
