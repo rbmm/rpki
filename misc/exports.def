@@ -1,0 +1,10 @@
+
+EXPORTS
+
+GetKeyStorageInterface
+DllRegisterServer	PRIVATE	
+DllUnregisterServer	PRIVATE	
+
+Java_Server_StopUdpServer PRIVATE
+Java_Server_StartUdpServer PRIVATE
+Java_Main_getKey PRIVATE 
